@@ -1,0 +1,26 @@
+h1{
+    color: #AAADAF;
+}
+h2{
+    color: #95989A;
+}
+p{
+    color: white;
+    font: 1em sans-serif;
+}
+body{
+    background-color: #434749;
+}
+div.firstSection{
+    color: white;
+}
+hr.splitLine1{
+  background-color: grey;
+}
+img{
+    height: 200px;
+    width: 300px;
+}
+p.my_comment{
+    font: italic 20px Serif;
+}
