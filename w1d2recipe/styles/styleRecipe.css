@@ -12,6 +12,7 @@ h1{
     text-align: center;
     font: 22pt bold;
     font-family: 'Lucida Sans', Helvetica, Arial;
+    /*background-image: url("../images/background.gif");*/
 }
 h2{
     text-align: left;
