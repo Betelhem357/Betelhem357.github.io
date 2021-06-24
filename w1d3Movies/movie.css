@@ -1,0 +1,95 @@
+body{
+    background-image: url("background.png");
+    font: 8pt Verdana, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.image_banner{
+    background-image: url(bannerbg.png);
+}
+.banner_image{
+    margin-left: 20%;
+}
+h1.movie_name{
+    font :  24pt bold Tahoma, Verdana, sans-serif;
+    text-shadow:  3px 3px #999999;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+img.header{
+    height: 50px;
+}
+.overall_content_area{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    border: 4px gray solid;
+    border-radius: 20px;
+    height: 900px;
+}
+.rotten{
+    width: 550px;
+}
+.rotten_head{
+    background-image: url("rbg.png");
+    font-size: 48pt;
+    color: red;
+    font-weight: bold;
+    border-top-left-radius:20px;
+}
+#rotten{
+    height:  83px;
+    vertical-align: bottom;
+    border-top-left-radius:20px;
+}
+.review_column1, .review_column2{
+  width: 47%;
+ margin-left: 2%; 
+}
+.review_column1{
+    float: left;
+    clear: left;
+    padding-right: 2%s;
+}
+.review_column2{
+    float: right;
+    margin: 0 0 1em 1em;
+}
+.general_overview{
+    background-color:  #A2B964;
+    width: 250px;
+    font: 8pt  Arial,sans-serif;
+    float: right;
+    border: 0px;
+    border-top-right-radius:20px;
+}
+.overview_image{
+    border-top-right-radius:20px;
+}
+#page_number{
+    padding-top: 95%;
+    padding-left: 50%;
+    border: 5px;
+    border-width: 8px;
+}
+.comment{
+font-size: 8pt;
+font-weight: bold;
+background-color: #E8DC9B;
+border: 2px gray solid;
+border-width: 2px;
+border-radius: 10px;
+padding: 8px;
+}
+
+.review_column1 img,.review_column2 img{
+    padding-right: 5px;
+}
+ dt{
+font-weight: bold;
+} 
+.validation_section{
+    position: relative;
+  left: 93%;
+}
