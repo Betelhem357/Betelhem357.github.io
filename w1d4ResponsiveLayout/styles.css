@@ -1,0 +1,67 @@
+.header{
+    grid-area: header;
+    background-color: rgb(198, 252, 252);
+    text-align: center;
+    height: 50px;
+    padding-top: 25px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.menu{
+    grid-area: menus;
+    background-color: darkcyan;
+    text-align: center;
+    display: flex;
+}
+.menu > div{
+    border-right: solid black;
+    color: white;
+    text-align: center;
+    width: 10%;
+}
+.col1,.col2,.col3{
+   height: 500px; 
+   padding-left: 10px;
+}
+.col1{
+    grid-area: col1;
+    background-color: darkgray;
+    
+}
+.col2{
+    grid-area: col2;
+    background-color: rgb(224, 218, 218);
+    
+}
+.col3{
+    grid-area: col3;
+    background-color: rgb(216, 190, 190);
+    
+}
+.footer{
+    grid-area: footer;
+    background-color: darkcyan;
+    text-align: center;
+    color: white;
+    height: 50px;
+    padding-top: 25px;
+}
+.grid_container{
+    display:grid;
+    grid-template-areas:'header header header header'
+    'menus menus menus menus'
+    'col1 col2 col2 col3'
+    'footer footer footer footer'
+    ;
+}
+@media screen and (max-width:599px){
+    .grid_container{
+        display:grid;
+        grid-template-areas:'header header header header'
+        'menus menus menus menus'
+        'col1 col1 col3 col3'
+        'col2 col2 col2 col2'
+        'footer footer footer footer'
+        ;
+    }
+}
