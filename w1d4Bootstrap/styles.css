@@ -1,44 +1,42 @@
-.header{
+#header{
     grid-area: header;
     background-color: rgb(198, 252, 252);
     text-align: center;
     height: 50px;
     padding-top: 25px;
+    padding-bottom: 25px;
     font-weight: bold;
     font-size: 25px;
 }
-.menu{
+#menu{
     grid-area: menus;
     background-color: darkcyan;
     text-align: center;
     display: flex;
 }
-.menu > div{
+#menu > div{
     border-right: solid black;
     color: white;
     text-align: center;
     width: 10%;
 }
-.col1,.col2,.col3{
+#col1,#col2,#col3{
    height: 500px; 
    padding-left: 10px;
 }
-.col1{
-    grid-area: col1;
+#col1{
     background-color: darkgray;
     
 }
-.col2{
-    grid-area: col2;
+#col2{
     background-color: rgb(224, 218, 218);
     
 }
-.col3{
-    grid-area: col3;
+#col3{
     background-color: rgb(216, 190, 190);
     
 }
-.footer{
+#footer{
     grid-area: footer;
     background-color: darkcyan;
     text-align: center;

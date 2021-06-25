@@ -5,20 +5,33 @@
     <meta charset="UTF-8">
     <title>Responsive Layout</title>
     <link href="styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 
 <body>
     <div class="grid_container">
-        <div class="header">Header</div>
-        <div class="menu">
-            <div>Menu 1</div>
-            <div>Menu 2</div>
-            <div>Menu 3</div>
+        <div class="row">
+            <div class="col-sm" id="header">Header</div>
         </div>
-        <div class="col1">Column 1</div>
-        <div class="col2">Column 2</div>
-        <div class="col3">Column 3</div>
-        <div class="footer">Footer</div>
+        <div class="row">
+            <div class="col-sm" id="menu">
+                <div >Menu 1</div>
+                <div>Menu 2</div>
+                <div>Menu 3</div>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-sm-4" id="col1">Column 1</div>
+                <div class="col-sm-4" id="col2">Column 2</div>
+                <div  class="col-sm-4" id="col3">Column 3</div>
+        </div>
+        <div class="row">
+            <div class="col-sm" id="footer">Footer</div>
+        </div>
+
+
+
+
     </div>
 </body>
 
