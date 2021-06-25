@@ -1,0 +1,15 @@
+.menu{
+    grid-area: field;
+    background-color: darkcyan;
+    text-align: center;
+    display: flex;
+}
+.field2{
+    
+}
+    .grid_container{
+        display:grid;
+        grid-template-areas:'header header'
+    
+        'field field';
+    }
