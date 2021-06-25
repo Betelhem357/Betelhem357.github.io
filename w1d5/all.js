@@ -25,6 +25,7 @@ function myFunctionTest(expected, found) {
   }
   
   function isVowel(a){
+      a = a.toLowerCase();
       if(a==="a"||a==="e"||a==="i"||a==="o"||a==="u"){
           return true;
       }else{

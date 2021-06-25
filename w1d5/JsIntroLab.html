@@ -31,6 +31,7 @@ function maxOfThree(a, b, c) {
 }
 
 function isVowel(a){
+    a = a.toLowerCase();
     if(a==="a"||a==="e"||a==="i"||a==="o"||a==="u"){
         return true;
     }else{
@@ -70,6 +71,7 @@ function filterLongWords(el,i){
 
 console.log("Expected output of isVowel(z) is false "+ myFunctionTest(false,isVowel("z")));
 console.log("Expected output of isVowel(a) is true "+ myFunctionTest(true,isVowel("a")));
+console.log("Expected output of isVowel(A) is true "+ myFunctionTest(true,isVowel("A")));
 console.log("Expected output of sum([7,3]) is 10 "+ myFunctionTest(10,sum([7,3])));
 console.log("Expected output of mul([1,2,3,4]) is 24 "+ myFunctionTest(24,multiply([1,2,3,4])));
 console.log("Expected output of reverse(hello) is olleh "+ myFunctionTest("olleh",reverse("hello")));
