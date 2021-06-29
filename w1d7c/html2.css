@@ -1,0 +1,116 @@
+
+.item3 { grid-area: pNLabel;
+          }
+.item4 { grid-area: pN;border: 2px solid rgb(177, 173, 173);}
+.item5 { grid-area: nameLabel;}
+.item6 { grid-area: name;border: 2px solid rgb(177, 173, 173);}
+.item7 { grid-area: unitPriceLabel;}
+.item8 { grid-area: unitPrice;
+ border: 2px solid rgb(177, 173, 173);}
+.item9 { grid-area: quantityLabel;;
+  }
+.item10 { grid-area: quantity;
+  border: 2px solid rgb(177, 173, 173);}
+.item11 { grid-area: supplierLabel;
+  }
+.item12 { grid-area: supplier;
+  border: 2px solid rgb(177, 173, 173);}
+.item13 { grid-area: dateLabel;
+  }
+.item14 { grid-area: date;
+ border: 2px solid rgb(177, 173, 173);color: rgb(158 147 147);}
+.item15 { grid-area: buttons;position: absolute;right: 0px;
+ }
+ .item16{
+  grid-area: validDate;
+ }
+.container > form {
+  position: relative;
+  display: grid;
+ grid-template-areas:'pNLabel quantityLabel'
+    'pN quantity'
+    'nameLabel supplierLabel'
+    'name supplier'
+    'unitPriceLabel dateLabel'
+    'unitPrice date'
+    'auto validDate'
+    'auto buttons'; 
+    ; 
+  grid-gap: 10px;
+  padding: 10px;
+  color: rgb(158 147 147);
+}
+
+.container{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.container > div {
+  width: 100px;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+h1{
+  color: rgb(158 147 147);
+  padding-left: 5%;
+}
+
+.form1{
+    padding: 5%;
+}
+
+input{
+  height: 25px;
+}
+
+.resetButton{
+  border:2px solid rgb(79, 146, 79);
+  color: rgb(79, 146, 79);
+  background-color: white;
+}
+
+.cancelButton{
+  border:2px solid rgb(248, 96, 96);
+  color: rgb(248, 96, 96);
+  background-color: white;
+}
+
+.addProduct{
+  border:2px solid rgb(44, 247, 111);
+  color: rgb(44, 247, 111);
+  background-color: white;
+}
+
+.title p{
+  display: inline;
+  color: white;
+  padding: 3%;
+  padding: 3%;
+}
+.title{
+  position: relative;
+  background-color: rgb(99, 99, 252);
+  padding: 30px;
+}
+.supplier{
+  border-left: 2px solid white;
+}
+.domMarket{
+  border-left: 2px solid white;
+}
+#hello{
+  position: absolute;
+  right: 90px;
+  margin: 0;
+  padding: 0px;
+}
+.signout{
+  position: absolute;
+  right: 2px;
+  margin:0px;
+}
+
+

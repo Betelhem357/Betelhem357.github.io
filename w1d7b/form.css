@@ -1,11 +1,11 @@
-.item1 { grid-area: email; width: 100%;margin: 10px;}
-.item2 { grid-area: password; width: 100%; margin: 10px;}
-.item3 { grid-area: url; width: 100%; margin: 10px;}
-.item4 { grid-area: checkbox; width: 100%;margin: 10px;}
-.item5 { grid-area: emailLabel;width: 100%;margin: 10px; }
-.item6 { grid-area: passwordLabel; width: 100%;margin: 10px;}
-.item7 { grid-area: urlLabel; width: 100%;margin: 10px;}
-.item8 { grid-area: checkboxLabel; margin: 10px; background-color: rgb(124, 124, 252);color: white;}
+.item1 { grid-area: emailLabel; width: 100%;margin: 10px;}
+.item2 { grid-area: email; width: 100%; margin: 10px;border-color: whitesmoke;}
+.item3 { grid-area: passwordLabel; width: 100%; margin: 10px;border-color: whitesmoke;}
+.item4 { grid-area: password; width: 100%;margin: 10px;border-color: whitesmoke;}
+.item5 { grid-area: urlLabel;width: 100%;margin: 10px;border-color: whitesmoke; }
+.item6 { grid-area: url; width: 100%;margin: 10px;border-color: whitesmoke;}
+.item7 { grid-area: checkbox; width: 100%;margin: 10px;border-color: whitesmoke;}
+.item8 { grid-area: submit; margin: 10px; background-color: rgb(124, 124, 252);color: white;}
 
 .container {
   display: grid;
