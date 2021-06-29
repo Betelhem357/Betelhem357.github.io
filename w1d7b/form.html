@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <link href="form.css" rel="stylesheet"/>
+</head>
+<body>
+
+<div class="container">
+  <form class="form1">
+      <div><label for="email" id="emailLabel" class="item1">Email address:</label></div> 
+      <div><input type="email" name="email" id="email" placeholder="Enter email" class="item2"></div>
+      <div> <label for="password" id="passwordLabel" class="item3">Password:</label></div>
+      <div><input type="password" name="password" id="password" 
+        placeholder="Enter password" min="10" pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{10,}$" class="item4"></div>
+      <div><label for="url" id="urlLabel" class="item5">URL:</label></div>
+      <div><input type="url" name="url" id="url" placeholder="Enter URL" pattern="((https|http):\/\/).*" class="item6"></div>
+      <div class="item7"><input type="checkbox" name="checkbox" id="checkbox" ><label for="checkbox" id="checkboxLabel">Check me out</label></div>
+      <div><button type="submit" class="item8">Submit</button></div>
+  </form>
+</div>
+
+</body>
+</html>

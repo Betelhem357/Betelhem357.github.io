@@ -73,10 +73,14 @@ function multiply(el){
 }
 
 function reverse(a){
-    var rev = '';
-  for (var i = a.length - 1; i >= 0; i--)
-    rev += a[i];
-  return rev;
+  //   var rev = '';
+  // for (var i = a.length - 1; i >= 0; i--)
+  //   rev += a[i];
+  var stringArray = a.split("");
+  var rev = stringArray.map(function(el,ind,array){
+     return array[array.length-1-ind];
+  });
+  return rev.join("");
 }
 
 function findLongestWord(el){

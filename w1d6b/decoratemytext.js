@@ -13,6 +13,7 @@ function startFunction(){
 
 function decorate(){
    var fs = parseInt(txtArea.style.fontSize) + 2;
+   console.log(txtArea.style.fontSize);
    txtArea.style.fontSize = fs.toString();
 }
 

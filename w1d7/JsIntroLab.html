@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+    <script>
+      // initialize mocha
+      mocha.setup('bdd');
+      // chai has a lot of stuff, let's make assert global
+      let assert = chai.assert;
+
+  </script>
+    <script src="all.js">
+    </script>
+    <script>
+      describe("To test max", function () {
+            it("Compute maximum of two numbers",
+                function () {
+                    assert.equal(max(3,5),5);
+                });
+        });
+
+        describe("Test of maxOfThree",function(){
+             it("check if from 3,5,7 function maxofthree return 7",function(){
+               assert.equal(maxOfThree(3,7,9),9);
+             });
+        });
+
+        describe("isVowel",function(){
+             it("check if a function is vowel",function(){
+               assert.equal(isVowel("a"),true);
+             });
+        });
+    </script>
+</head>
+<body>
+
+  <div id="mocha"></div>
+  <script>
+      mocha.run();
+
+  </script>
+
+</body>
+</html>

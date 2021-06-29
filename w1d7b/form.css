@@ -1,0 +1,36 @@
+.item1 { grid-area: email; width: 100%;margin: 10px;}
+.item2 { grid-area: password; width: 100%; margin: 10px;}
+.item3 { grid-area: url; width: 100%; margin: 10px;}
+.item4 { grid-area: checkbox; width: 100%;margin: 10px;}
+.item5 { grid-area: emailLabel;width: 100%;margin: 10px; }
+.item6 { grid-area: passwordLabel; width: 100%;margin: 10px;}
+.item7 { grid-area: urlLabel; width: 100%;margin: 10px;}
+.item8 { grid-area: checkboxLabel; margin: 10px; background-color: rgb(124, 124, 252);color: white;}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    'emailLabel'
+    'email'
+    'passwordLabel'
+    'password'
+    'urlLabel'
+    'url'
+    'checkbox'
+    'submit';
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.container > div {
+  width: 100px;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.form1{
+    padding: 5%;
+}
+
+
