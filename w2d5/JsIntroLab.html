@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+
+    <script>
+      // initialize mocha
+      mocha.setup('bdd');
+      // chai has a lot of stuff, let's make assert global
+      let assert = chai.assert;
+      let expect = chai.expect;
+
+  </script>
+    <script src="constructor.js">
+    </script>
+    <script>
+    describe("Filter a function", function () {
+    it("removing banned words from string", function () {
+      assert.equal(
+        "This house is not nice!".filter(["not","!"]),
+        "This house is  nice"
+      );
+    });
+  });
+  
+  describe("BubbleSort Algorithm", function () {
+    it(" BubbleSort algorithm on the Array object", function () {
+      expect([6, 4, 0, 3, -2, 1].BubbleSort()).to.eql( [-2, 0, 1, 3, 4, 6]);
+    });
+  });
+  
+  describe("Teacher teach", function () {
+    it("The professor", function () {
+      let myTeacher = new Teacher();
+      myTeacher.initialize("Michael", "40");
+  
+      assert.equal(
+        myTeacher.teaches("WAP"),
+        "Michael is now teaching WAP"
+      );
+    });
+  });
+  
+    </script>
+</head>
+<body>
+
+  <div id="mocha"></div>
+  <script>
+      mocha.run();
+
+  </script>
+
+</body>
+</html>
