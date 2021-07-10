@@ -13,7 +13,11 @@ function getNumber(){
             readline.close();
         }
         else{
-            sum = sum + parseInt(number);
+            if(!parseInt(number)){
+                console.log("Please enter the number!");
+            }else{
+                sum = sum + parseInt(number);
+            }
             getNumber();
         }
     });
