@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang='en'>
+ <head>
+ <meta charset="utf-8">
+    <% if(6<time && time<18){ %>
+        <link href="../css/day.css" rel="stylesheet" />
+      <% } else{ %>  
+        <link href="../css/night.css" rel="stylesheet" />
+     <% } %>
+ <title>Current time</title>
+ </head>
+ <body>
+ This page was loaded at <%= time %>
+ </body>
+</html>
