@@ -7,12 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <% for(const item of products){ %>
     <div>
-        <h1><%= item.name %></h1>
-        <p><%= item.price %></p>
-        <p><%= item.quantity %></p>
+        <% for(const item of products){ %>
+            <div>
+                <h1><%= item.name %></h1>
+                <p><%= item.price %></p>
+                <p><%= item.quantity %></p>
+            </div>
+            <% } %>
     </div>
-    <% } %>
 </body>
 </html>

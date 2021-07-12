@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/product.css" rel="stylesheet"/>
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <h1><%= name %></h1>
-        <p><%= price %></p>
-        <p><%= description %></p>
-        <p><%= id %></p>
-    </div>
-    <button>Add to chart</button>
+    <form method="POST" action="/addToCart">
+        <div>
+            <h1><%= name %></h1>
+            <p><%= price %></p>
+            <p><%= description %></p>
+            <p><%= id %></p>
+        </div>
+        <label>Product ID</label>
+        <input type="text" name="id" />
+        <button>Add to chart</button>
+    </form>
 </body>
 </html>
