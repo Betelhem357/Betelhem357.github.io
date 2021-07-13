@@ -11,12 +11,12 @@
     <form method="POST" action="/addToCart">
         <div>
             <h1><%= name %></h1>
-            <p><%= price %></p>
-            <p><%= description %></p>
-            <p><%= id %></p>
+            <p>Price : <%= price %></p>
+            <p>Description: <%= description %></p>
+            <p>ID: <%= id %></p>
         </div>
         <input type="hidden" name="name" value=<%=name %> />
-        <input type="hidden" name="price" value=<%=price%> />
+        <input type="hidden" name="price" value=<%=price %> />
         <input type="submit" value="add to cart"/>
     </form>
 </body>

@@ -3,9 +3,15 @@ let path = require('path');
 const session = require('express-session');
 let app = express();
 app.set('view engine', 'ejs');
-app.use(express.urlencoded());
+app.use(express.urlencoded({extended:false}));
 app.use('/css', express.static(path.join(__dirname, 'css')));
 app.use(session({ secret: 'my secret' }));
+
+app.get('/' , (req , res)=>{
+
+   res.render('firstPage.ejs');
+
+})
 
 app.get('/car', (req, res) => {
    let product = {
@@ -47,12 +53,11 @@ app.post('/addToCart', (req, res) => {
    let name = req.body.name;
    let price = req.body.price;
    let product = { name: name, price: price };
-   res.session = req.session;
-   if (!res.session.cart) {
-      res.session.cart = {};
+   if (!req.session.cart) {
+      req.session.cart = {};
    }
-   let cnt = res.session.cart[name] ? res.session.cart[name].count : 0;
-   res.session.cart[name] = { count: cnt + 1, value: product }
+   let cnt = req.session.cart[name] ? req.session.cart[name].count : 0;
+   req.session.cart[name] = { count: cnt + 1, value: product }
    res.redirect('/cart');
 });
 
