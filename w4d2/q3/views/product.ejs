@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/product.css" rel="stylesheet"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../query.js"></script>
+    <script src="../js/query.js"></script>
+    <title>Product1</title>
+</head>
+<body >
+    <form method="POST" action="/addToCart" id="productPage">
+        <div>
+            <h1><%= name %></h1>
+            <p>Price : <%= price %></p>
+            <p>Description: <%= description %></p>
+            <p>ID: <%= id %></p>
+        </div>
+        <input type="hidden" name="name" value=<%=name %> />
+        <input type="hidden" name="price" value=<%=price %> />
+        <input id="submit" type="submit" value="add to cart"/>
+    </form>
+    <a href="/cart" id="number">Number of Items</a>
+</body>
+</html>
